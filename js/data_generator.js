@@ -4,14 +4,14 @@
  */
 
 // set up data structures
-window.streams = {};
-streams.home = [];
-streams.users = {};
+window.streams = {};                  //is an object with two properties, users and home. 
+streams.home = [];                    //an array of all tweets from all users you are following
+streams.users = {};                   //an object with properties for each user.  streams.users.shawndrost has all of shawndrost's tweets.
 streams.users.shawndrost = [];
 streams.users.sharksforcheap = [];
 streams.users.mracus = [];
 streams.users.douglascalhoun = [];
-window.users = Object.keys(streams.users);
+window.users = Object.keys(streams.users);    //an array of strings -- all the usernames that you're following
 
 // utility function for adding tweets to our data structures
 var addTweet = function(newTweet){
