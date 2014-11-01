@@ -1,4 +1,32 @@
+/* Page Styles
+==================================== */
+
+* { 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 body {
-  margin: 0px;
-  /*background-image: url('img/toddsa.jpg');*/
-};
+  font: normal 1.1em/1.5 sans-serif;
+  color: #222;
+  background-color: lightgrey;
+}
+
+/* Layout Element Colors
+====================================*/
+
+.main-header 		{ background-color: #384047; }
+.main-logo a 		{ background-color: #5fcf80; }
+.main-nav a 		{ background-color: #3f8abf; }
+.primary-content	{ background-color: #caebf6; }
+.secondary-content	{ background-color: #bfe3d0; }
+.main-footer 		{ background-color: #b7c0c7; }
+.tweets 			{ background-color: white; }
+
+/* Header, Banner, Footer Layout
+==================================*/
+
+
+
+
+

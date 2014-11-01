@@ -2,18 +2,22 @@
 <html>
   <head>
     <title>Twittler</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div>
       <h1>Home</h1>
     </div>
     <div>
-      <button>Back Home</button>
-      <button>New Tweet</button>
+      <button class="backHome">Back Home</button>
+      <button class="newTweet">New Tweet</button>
     </div>
-    <main class="tweets">
-    </main>
+    <div>
+      <h3>Tweets</h3>
+      <main class="tweets">
+      </main>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/data_generator.js"></script>
     <script src="js/twittler.js"></script>
