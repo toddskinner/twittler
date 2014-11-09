@@ -5,21 +5,32 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
-    <div>
-      <h1>Home</h1>
-    </div>
-    <div>
-      <button class="backHome">Back Home</button>
-      <button class="newTweet">New Tweet</button>
-    </div>
-    <div>
-      <h3>Tweets</h3>
-      <main class="tweets">
-      </main>
-    </div>
+    <body>
+      <div class="main-wrapper">
+        <header class="main-header">
+          <h1 class="main-logo">Logo</h1>
+          <ul class="main-nav">
+            <li><a href="#"> Link 1</a></li>
+            <li><a href="#"> Link 2</a></li>
+            <li><a href="#"> Link 3</a></li>                
+            <li><a href="#"> Link 4</a></li>
+          </ul>
+        </header>
+        <div class="primary-content col">
+          <h2>Home</h2>
+          <button class="backHome">Back Home</button>
+          <button class="newTweet">New Tweet</button>
+        </div>
+        <div class="secondary-content col">
+          <h3>Tweets</h3>
+          <main class="tweets"></main>
+        </div>
+        <footer class="main-footer">
+          <p>&copy; 2014 Todd Skinner Productions LLC</p>
+        </footer>
+      </body>
+    </div>      
     <script src="js/jquery.js"></script>
     <script src="js/data_generator.js"></script>
     <script src="js/twittler.js"></script>
-  </body>
 </html>

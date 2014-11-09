@@ -34,13 +34,13 @@ $(document).ready(function(){
 
   $('.backHome').click(function(){
     changeStream(streams.home);
-    $('h1').html('Home');
+    $('h2').html('Home');
   });
     
   $('.tweets').on('click', 'a.user', function(event){
     event.preventDefault();
     var username = $(this).data('user');
-    $('h1').html(username);
+    $('h2').html(username);
     changeStream(streams.users[username]);
   });
 
