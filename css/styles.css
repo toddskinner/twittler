@@ -9,20 +9,25 @@
 body {
   font: normal 1.1em/1.5 sans-serif;
   color: #222;
-  background-color: #edeff0;
+  background-color: white;
+}
+.tweets {
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 /* Layout Element Colors
 ====================================*/
 
 .main-header 		{ background-color: #384047; }
-.main-logo  		{ background-color: #5fcf80; }
+.main-logo  		{ background-color: #3f8abf; }
 .main-nav a 		{ background-color: #3f8abf; }
 .main-nav li 		{ background-color: #3f8abf; }
-.primary-content	{ background-color: #caebf6; }
-.secondary-content	{ background-color: #caebf6; }
+.primary-content	{ background-color: white; }
+.secondary-content	{ background-color: white; }
 .main-footer 		{ background-color: #b7c0c7; }
-.tweets 			{ background-color: white; }
+.tweets 			{ background-color: #edeff0; }
 
 /* Header, Banner, Footer Layout
 ==================================*/
@@ -60,23 +65,43 @@ body {
 	text-align: center;
 	padding: 2px;
 }
-.main-banner {
-	background: #ebedee;
-	text-align: center;
-}
 
 /* Column Layout
 ====================================*/
 
 .col {
 	display: inline-block;
-	padding: 20px;
+	padding-left: 30px;
 	margin-right: -5px;
 	vertical-align: top;
 }
 .primary-content {
-	width: 30%;
+	width: 20%;
 }
 .secondary-content {
-	width: 70%;
+	width: 80%;
+}
+
+/* Media Queries
+====================================*/
+
+@media (max-width: 768px){
+	.main-logo,
+	.main-nav, 
+	.main-nav li, 
+	.col {
+		display: block;
+		width: initial;
+		height: initial;
+		margin: initial;
+	}
+	.main-nav {
+		padding-left: initial;
+	}
+	.main-nav li {
+		margin-top: 15px;
+	}
+	.main-banner {
+		display: none;
+	}
 }
